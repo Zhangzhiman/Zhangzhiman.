@@ -1,9 +1,24 @@
-#欢迎来到我的主页！
-张芷曼，一个正在努力学习让自己人生履历更丰富的学生。
-##爱好
-喜欢看书，喜欢学习新事物。
-###联系方式
-1.邮箱：3427763033@qq.com
-2.电话：15272238757
-####创作
-正在努力挖掘...
+name: Caching Primes
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Cache Primes
+      id: cache-primes
+      uses: actions/cache@v4
+      with:
+        path: prime-numbers
+        key: ${{ runner.os }}-primes
+
+    - name: Generate Prime Numbers
+      if: steps.cache-primes.outputs.cache-hit != 'true'
+      run: /generate-primes.sh -d prime-numbers
+
+    - name: Use Prime Numbers
+      run: /primes.sh -d prime-numbers
