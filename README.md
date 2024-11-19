@@ -1,16 +1,16 @@
-name: Caching Primes
+name: ZhangZhiman
 
 on: push
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: Students
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: email
 
-    - name: Cache Primes
-      id: cache-primes
+    - name: ZhangZhiman
+      id: 3427763033@qq.com
       uses: actions/cache@v4
       with:
         path: prime-numbers
