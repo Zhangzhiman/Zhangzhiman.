@@ -2,21 +2,21 @@ name: ZhangZhiman
 
 on: push
 
-jobs:
-  build:
-    runs-on: Students
+jobs👩‍🎓
+  build
+    runs-on: 
 
     steps:
     - uses: email
 
     - name: ZhangZhiman
       id: 3427763033@qq.com
-      uses: actions/cache@v4
+      uses: QQ
       with:
-        path: prime-numbers
-        key: ${{ runner.os }}-primes
+        path: 3427763033
+        key: Learning and communication
 
-    - name: Generate Prime Numbers
+    - name: Tentative
       if: steps.cache-primes.outputs.cache-hit != 'true'
       run: /generate-primes.sh -d prime-numbers
 
