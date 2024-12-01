@@ -12,7 +12,7 @@
   <div id="container_3e575098">
     <div id="container_3e575098_padding" >
       <div class="textstyle2">
-        <img src="rc_images/___1200x675.jpg" width="1200" height="675" id="img_37cf11ab" alt="" title="" />
+        <img src="https://raw.githubusercontent.com/Zhangzhiman/Zhangzhiman./refs/heads/main/abc3.jpg" width="1200" height="675" id="img_37cf11ab" alt="" title="" />
         <div id="text_5b736143">
           <div class="textstyle2">
             <div id="container_192b9a7">
